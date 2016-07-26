@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+#pictrue_div{
+	margin:10px 10px 10px 10px;
+	width:550px;
+	min-height:800px;
+	height:auto;
+	position:relative;
+}
+
+#image_upload_div{
+	width:790px;
+	min-height:400px;
+	height:auto;
+	position:relative;
+}
+
+/*照片*/
+#show_image_div{
+	width:780px;
+	min-height:800px;
+	height:auto;
+}
+
+.show_image_info{
+	width:250px;
+	height:210px;
+	max-width:250px;
+	max-height:210px;
+	margin:5px 5px 5px 5px;
+	text-align:center;
+	line-height:20px;
+	float:left;
+}
+
+.show_image_preview{
+	width:250px; height:190px;
+}
+
+.show_image_title{
+	width:250px; height:20px;
+}
+
+.image_view_div{
+	width:800px;
+	height:auto;
+	min-height:800px;
+}
+
+.image_comment_div{
+	width:540px;
+	height:100px;
+	float:left;
+	border:1px solid #0FF;
+}
+
+.imagecomment{
+	width:480px; height:50px; margin-left:5px;float:right;
+}

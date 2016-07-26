@@ -1,0 +1,127 @@
+/*公共样式*/
+.publictabtrue{width:96px;height:29px;line-height:29px;float:left;text-align:center;cursor:pointer; color:#000;background:#ffffff;border-top:1px solid;border-right:1px solid;border-left:1px solid; }
+.publictabfalse{width:96px;height:29px;line-height:29px;float:left;text-align:center;cursor:pointer; color:#000;background:#eeeeee;border-top:1px solid;border-right:1px solid;border-left:1px solid; }
+.righttab{
+	float:right
+}
+#tab_bg{
+	line-height:29px;
+}
+#option1{
+	margin-right:5px;
+}
+#option2{
+	margin-right:5px;
+}
+#option3{
+	margin-right:5px;
+}
+#option4{
+	margin-right:5px;
+}
+#option5{
+	margin-right:5px;
+}
+#option6{
+	margin-right:5px;
+}
+/*公共样式*/
+
+/*短信息页面*/
+.messagetab{width:760px; height:auto; min-height:30px;}
+#messagetab1{width:760px;height:auto; min-height:696px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid; float:left; padding-top:10px; padding-left:10px;}
+#messagetab2{width:760px;height:auto; min-height:696px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px;}
+/*短信息页面*/
+
+/*好友页面*/
+.friendtab{width:765px; height:auto; min-height:30px;}
+#friendtab1{width:765px;height:auto; min-height:696px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid; float:left; padding-top:10px; padding-left:10px;}
+#friendtab2{width:765px;height:auto; min-height:696px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px;}
+/*好友页面*/
+
+/*群组页面*/
+.grouptab{width:790px; height:auto; min-height:30px;}
+#grouptab1{width:790px;height:auto; min-height:694px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid; float:left; padding-top:10px; padding-left:10px;}
+#grouptab2{width:790px;height:auto; min-height:694px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px;}
+/*群组页面*/
+
+/*日记页面*/
+.diarytab{width:550px; height:auto; min-height:30px;}
+#diarytab1{width:550px;height:auto; min-height:674px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid; float:left; padding-top:10px; padding-left:10px;}
+#diarytab2{width:550px;height:auto; min-height:674px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px;}
+/*日记页面*/
+
+/*留言页面*/
+.messageboardtab{width:780px; height:auto; min-height:30px;}
+#messageboardtab1{width:780px;height:auto; min-height:694px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid; float:left; padding-top:10px; padding-left:10px;}
+#messageboardtab2{width:780px;height:auto; min-height:694px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px;}
+/*留言页面*/
+
+/*系统消息页面*/
+.systemmessagetab{width:780px; height:auto; min-height:30px;}
+#systemmessagetab1{width:780px;height:auto; min-height:694px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid; float:left; padding-top:10px; padding-left:10px;}
+#systemmessagetab2{width:780px;height:auto; min-height:694px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px; position:relative;}
+/*系统消息页面*/
+
+/*音乐页面*/
+.musictab{width:768px; height:auto; min-height:30px;}
+#musictab1{width:768px;height:auto; min-height:696px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid; float:left; padding-top:10px; padding-left:10px;}
+#musictab2{width:768px;height:auto; min-height:696px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px;}
+/*音乐页面*/
+
+/*照片页面*/
+.pictruetab{width:768px; height:auto; min-height:30px;}
+#pictruetab1{width:768px;height:auto; min-height:670px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid; float:left; padding-top:10px; padding-left:10px;}
+#pictruetab2{width:768px;height:auto; min-height:670px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px;}
+/*照片页面*/
+
+/*图片上传页面*/
+.imageuploadtab{width:780px; height:auto; min-height:30px;}
+#imageuploadtab1{width:780px;height:auto; min-height:694px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid; float:left; padding-top:10px; padding-left:10px;}
+#imageuploadtab2{width:780px;height:auto; min-height:694px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px;}
+/*图片上传页面*/
+
+/*空间编写层*/
+.homewritetab{width:540px; height:auto; min-height:30px;}
+#writeoption1{
+	margin-right:5px;
+}
+#writeoption2{
+	margin-right:5px;
+}
+#homewritetab1{width:540px;height:260px;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;border-top:#f0f1f3 1px solid; float:left; text-align:left; }
+#homewritetab2{width:540px;height:260px;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;border-top:#f0f1f3 1px solid; float:left; text-align:left; }
+/*空间编写层*/
+
+
+/*空间动态查看层*/
+.homeviewarticletab{width:540px; height:auto; min-height:100px;}
+#viewoption1{
+	margin-right:5px;
+}
+#viewoption2{
+	margin-right:5px;
+}
+#homeviewarticletab1{width:540px; height:auto;min-height:450px; float:left; text-align:left;border-top:#f0f1f3 2px solid; }
+#homeviewarticletab2{width:540px; height:auto;min-height:450px; float:left; text-align:left;border-top:#f0f1f3 2px solid;  }
+
+/*用户设置页面*/
+.accountsettingtab{width:778px; height:29px; min-height:270px;}
+#accountsettingtab1{width:778px;height:auto; min-height:687px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid; float:left; padding-top:10px; padding-left:10px;}
+#accountsettingtab2{width:778px;height:auto; min-height:687px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px;}
+#accountsettingtab3{width:778px;height:auto; min-height:687px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid; float:left; padding-top:10px; padding-left:10px;}
+#accountsettingtab4{width:778px;height:auto; min-height:687px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px;}
+#accountsettingtab5{width:778px;height:auto; min-height:687px;border-top:#f0f1f3 1px solid;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;float:left; padding-top:10px; padding-left:10px;}
+
+
+body,td{font-size: 12px;}
+.tab{margin-top:10px; width:800; height:300px; min-height:300px;}
+#TabCon1{width:800px;height:300px;line-height:100px;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;}
+#TabCon2{width:800px;height:300px;line-height:100px;border-left:#f0f1f3 1px solid;border-bottom:#f0f1f3 1px solid;border-right:#f0f1f3 1px solid;}
+.xixi1{width:212px;height:29px;line-height:29px;background-image:url(../image/public/news_bghover1.gif);cursor:pointer;}
+.xixi2{width:212px;height:29px;line-height:29px;background-image:url(../image/public/news_bghover1.gif);cursor:pointer;}
+.tab1{width:96px;height:29px;line-height:29px;float:left;text-align:center;cursor:pointer; color:#FFF;}
+.tab2{width:116px;height:29px;line-height:29px;float:left;text-align:center;cursor:pointer;color:#000;}
+
+
+

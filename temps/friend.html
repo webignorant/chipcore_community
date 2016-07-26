@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>好友</title>
+<link href="../css_js/webpage.css" rel="stylesheet" type="text/css" />
+<link href="../css_js/tab_social.css" rel="stylesheet" type="text/css" />
+<script src="../css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+
+<link href="css_js/webpage.css" rel="stylesheet" type="text/css" />
+<link href="css_js/navigation.css" rel="stylesheet" type="text/css" />
+<link href="css_js/application.css" rel="stylesheet" type="text/css" />
+<link href="css_js/user_friend.css" rel="stylesheet" type="text/css" />
+<link href="css_js/tab_social.css" rel="stylesheet" type="text/css" />
+{*theme_style*}
+<script src="css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+<script src="css_js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="header">
+	{*header_div*}
+</div>
+
+<div id="webpage">
+	<div id="content">
+		<div id="application_div">
+			{*application_div*}
+        </div>
+        
+        <div id="start_main_div">
+          <div id="webname" style=" font-size:x-large"><img width="32" height="32" src="public/image/icon/friend.png" />好友管理</div>
+            <hr />
+            <div id="friend_div">
+            	
+                   <div class="friendtab">
+                        <div id="tab_bg">
+                             <div id="option1" class="publictabtrue" onclick="setFriendTab(1);">我的好友</div>
+                             <div id="option2" class="publictabfalse" onclick="setFriendTab(2);">查找好友</div>
+                        </div>
+                        
+                        <div id="friendtab1">
+                            {*friend_list*}
+                            <!--
+                            <div class="show_friend_div">
+                                <div class="show_friend_info" >
+                                	<img width="50px" height="50px" src="" style=" position:absolute;left:10px;top:10px;"/>
+                                    <div style="position:absolute;top:10px; left:70px;">
+                                    	<dl>
+                                        	<dd><h5><a href="home.php?mode=other;userID={*friendID*}">{*friend_name*}</a></h5></dd>
+                                            <dd><h5>{*friend_group*}</h5></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="show_friend_operate_div">
+                                    <dl>
+                                        <dd><a href="message.php?sendID={*friendID*}">发消息</a></dd>
+                                    </dl>
+                                </div>
+                             </div>
+                             -->
+                         </div>
+                             
+                         <div id="friendtab2" style="display:none">
+                         	<div class="find_friend_div">
+                            	<form action="search.php?mode=addfriend" method="post">
+                                	<dl style="line-height:250%">
+                                    	<dd>用户编号:<input name="find_userID" type="text" id="findfriendID" class="property_textInput" value="{*finduserID*}" readonly="true"/></dd>
+                           	      <dd>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:<input name="find_username" type="text" class="property_textInput"</dd>
+                                        <dd>电子邮件:<input name="find_email" type="text" class="property_textInput"</dd>
+                                        <dd><input name="" value="搜索" type="submit" class="search_button"/></dd>
+                                    </dl>
+                                </form>
+                            </div>
+                         </div>
+                         
+                  </div>
+             </div>
+             
+         </div>
+     </div>
+</div>
+{*jqscript*}
+{*script*}
+</body>
+
+</html>
+

@@ -1,0 +1,145 @@
+<!--register-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户注册</title>
+<link href="css_js/webpage.css" rel="stylesheet" type="text/css" />
+<link href="css_js/navigation.css" rel="stylesheet" type="text/css" />
+<link href="css_js/application.css" rel="stylesheet" type="text/css" />
+<link href="css_js/login.css" rel="stylesheet" type="text/css" />
+<link href="css_js/register.css" rel="stylesheet" type="text/css" />
+{*theme_style*}
+<script src="css_js/registerCheck.js"></script>
+</head>
+<body>
+
+<div id="header">
+	<div class="dingwei" style="width:1100px; position:relative; margin:0 auto;">
+        <div id="navigation">
+            <div id="nav_logo_div" onclick="javascript:window.location.href='index.php'">
+
+            </div>
+            <div id="nav_main_div">
+            	<div id="nav_right_div">
+                	<ul id="nav_list">
+                    	<li><b><a href="register.php">注册</a></b></li>
+                        <li><b><a href="index.php">登录</a></b></li>
+                    </ul>
+                    <!--
+                    <div style="width:70px; height:50px; float:left; text-align:center; line-height:50px;">
+                        <a href="login_check.php?mode=guest">游客登录</a>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="webpage">
+	<div id="content">
+        <div id="login_div">
+            <form action="login_check.php" method="post" onsubmit="">
+                <p>&nbsp;</p>
+                <p>
+                &nbsp; &nbsp; 
+                电子邮件：<input id="email" name="email" type="text" class="textInput" value="请输入电子邮件" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue" onfocus="if(this.value!=''){this.value='';}"/>
+                </p>
+                <p>
+                  &nbsp; &nbsp; 
+                  密码：<input id="password" name="password" type="password" class="textInput" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue" onfocus="if(this.value!=''){this.value='';}"/>
+            </p>
+                &nbsp;
+                <input type="checkbox" name="checkcookie[]" value="1" id="checkcookie" />
+                自动登录
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <!--
+                <a href="forgetcode.html">忘记密码</a>
+                -->
+                <p>
+                <input name="button1" type="submit" id="button1" class="login_buttonInput" value="登录"/>
+                </p>      
+                <hr/>
+                <p>
+                <input name="button2" type="button" id="button2" class="reg_buttonInput" value="注册" onclick="javascript:window.location.href='register.php'"/>
+                </p>
+            </form>
+        </div>
+        
+        <div id="start_main_div">
+            <div id="user_reg_div">
+            <form  action="register_check.php" method="post" name="form_register" id="form_register" onSubmit="return checkValue();">
+            	<div class="reg_content_div">
+                	<h3>加入芯灵社区，找到全部好友</h3>
+                </div>
+            	<div class="reg_content_div">
+                	<div class="reg_name">电子邮件:</div><div class="reg_value"><input name="email" type="text" class="reg_input_text" id="email" />&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div id="checkemail" class="reg_caption_div">请输入有效的电子邮件</div>
+                </div>
+                <div class="reg_content_div">
+                	<div class="reg_name">密码:</div><div class="reg_value"><input name="password" type="password" class="reg_input_text" id="password" />&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div id="checkpassword" class="reg_caption_div">请输入有效的密码</div>
+                </div>
+                <div class="reg_content_div">
+                	<div class="reg_name">验证密码:</div><div class="reg_value"><input name="otherpassword" type="password" class="reg_input_text" id="otherpassword" />&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div id="checkotherpassword" class="reg_caption_div">两次密码不相同</div>
+                </div>
+                <div class="reg_content_div">
+                	<div class="reg_name">姓名:</div><div class="reg_value"><input name="realname" type="text" class="reg_input_text" id="realname" />&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div id="checkrealname" class="reg_caption_div">真实的姓名能让更多的故人找到你</div>
+                </div>
+                <div class="reg_content_div">
+                	<div class="reg_name">性别:</div>
+                    <div class="reg_value">
+                  <input type="radio" value="man" checked="checked" name="sex"/>
+              		男&nbsp;&nbsp;
+           	  <input type="radio" value="woman" name="sex"/>女
+              		</div>
+                </div>
+                <div class="reg_content_div">
+                	<div class="reg_name">生日:</div>
+                    <div class="reg_value">
+                <select class="select_data_four" name="year">
+                	</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980" selected="selected">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option>
+                </select>年
+                <select id="month" class="select_data_two" name="month">
+                	<option value="1" selected="selected">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+                </select>月
+                <select class="select_data_two" name="day">
+                	<option value="1" selected="selected">1</option>  <option value="2">2</option>  <option value="3">3</option>  <option value="4">4</option>  <option value="5">5</option>  <option value="6">6</option>  <option value="7">7</option>  <option value="8">8</option>  <option value="9">9</option>  <option value="10">10</option>  <option value="11">11</option>  <option value="12">12</option>  <option value="13">13</option>  <option value="14">14</option>  <option value="15">15</option>  <option value="16">16</option>  <option value="17">17</option>  <option value="18">18</option>  <option value="19">19</option>  <option value="20">20</option>  <option value="21">21</option>  <option value="22">22</option>  <option value="23">23</option>  <option value="24">24</option>  <option value="25">25</option>  <option value="26">26</option>  <option value="27">27</option>  <option value="28">28</option>  <option value="29">29</option>  <option value="30">30</option>  <option value="31">31</option>
+                </select>日
+                	</div>
+                </div>
+                <div class="reg_content_div">
+                	<div class="reg_name">居住地点:</div>
+                    <div class="reg_value"><input name="location" type="text" class="reg_input_text" id="location" />&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div id="checklocation" class="reg_caption_div">请输入真实的居住地址，方便找到你附近的好友</div>
+                </div>
+                <div class="reg_content_div">
+                	<div class="reg_name">身份:</div>
+                    <div class="reg_value"><select name="status" class="select_data" id="status"><option value="1" selected="selected">学生</option><option value="2">工作者</option><option value="3">其他</option></select>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div id="checklocation" class="reg_caption_div">请输入目前身份，这很重要</div>
+                </div>
+                <div class="reg_content_div">
+                	<div class="reg_name"></div>
+                    <div class="reg_value"><input class="reg_buttonInput" name="regButton" type="submit" value="注册" style="background-color:#F00"; width="180px" height="35px" id="regButton"/></div>
+                </div>
+            </form>
+          </div>
+      </div> 
+        
+        <div id="about">
+          XXXXXX有限公司　版权所有　ICP:xxxxxxxx号<br />
+              地址：XXXXXXXXXXXXXXXXXXXXXX 邮编：xxxxxx<br />
+        电话：xxxx-xxxxxxx 网址：<a href="http://www.xxxxxxxx.cn">www.xxxxxxxx.cn</a> 
+        </div> 
+        
+    </div>
+</div>
+{*jqscript*}
+{*script*}
+</body>
+</html>
+<!--register-->

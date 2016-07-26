@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.dynamic_div{
+	width:530px; height:auto; min-height:60px; margin:5px;
+}
+
+.dynamic_head_div{
+	width:55px; height:60px; float:left;
+}
+
+.dynamic_content_div{
+	width:460px; height:auto; min-height:60px; float:right;
+}

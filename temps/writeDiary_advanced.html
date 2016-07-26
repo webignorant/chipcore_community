@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>学日记</title>
+
+<link href="../css_js/webpage.css" rel="stylesheet" type="text/css" />
+<link href="../css_js/tab_social.css" rel="stylesheet" type="text/css" />
+<script src="../css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+<script src="../plugins/kindeditor/kindeditor.js"></script>
+<script src="../plugins/kindeditor/lang/zh_CN.js"></script>
+
+<link href="css_js/webpage.css" rel="stylesheet" type="text/css" />
+<link href="css_js/navigation.css" rel="stylesheet" type="text/css" />
+<link href="css_js/application.css" rel="stylesheet" type="text/css" />
+<link href="css_js/share_diary.css" rel="stylesheet" type="text/css" />
+<link href="css_js/tab_social.css" rel="stylesheet" type="text/css" />
+{*theme_style*}
+<script src="css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+<script src="plugins/kindeditor/kindeditor.js"></script>
+<script src="plugins/kindeditor/lang/zh_CN.js"></script>
+
+<script language="javascript">
+	var editor;
+	KindEditor.ready(function(K) {
+		editor = K.create('textarea[name="content"]', {
+			resizeType : 1,
+			allowPreviewEmoticons : false,
+			allowImageUpload : false,
+			items : [
+				'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+				'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+				'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+		});
+	});
+		
+   html = editor.html();
+
+   // 同步数据后可以直接取得textarea的value
+   editor.sync();
+   html = document.getElementById('content').value; // 原生API
+   html = K('#editor_id').val(); // KindEditor Node API
+   html = $('#editor_id').val(); // jQuery
+
+   // 设置HTML内容
+   editor.html('HTML内容');
+</script>
+</head>
+
+<body>
+
+<div id="header">
+	{*header_div*}
+</div>
+
+<div id="webpage">
+	<div id="content">
+		<div id="application_div">
+			{*application_div*}
+        </div>
+        
+        <div id="start_main_div">
+			<div id="webname" style=" font-size:x-large"><img width="32" height="32" src="public/image/icon/write_diary.png" />写日记</div>
+            <hr />
+            <div id="write_diary_div">
+				<p style="font-size:16px;"><b>写日记(高级模式)</b></p>
+                <br />
+				<form name="" action="{*address*}" method="post">
+                    <p />
+                    标题:<input name="title" type="text" style="width:600px;" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue" onfocus="if(this.value!=''){this.value='';}" value="{*title*}"/>
+                    <p />
+                    内容:
+                    <br />
+                    <textarea name="content" style="width:630px;height:500px;visibility:hidden;" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue">{*content*}</textarea>
+                    <br /><br />
+                    <input name="" type="submit" value="发表" class="reg_button"/>
+                      <select name="callpurview" style=" margin:5px 5px 5px 5px;">
+                        <option value="0" selected="selected">私密日记</option>
+                        <option value="1">所有人可见</option>
+                        <option value="2">仅好友可见</option>
+                      </select>
+				</form>
+			</div>  
+		</div>
+         
+     </div>
+</div>
+{*jqscript*}
+{*script*}
+</body>
+
+</html>
+

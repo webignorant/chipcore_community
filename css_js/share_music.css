@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+#music_div{
+	margin:10px 10px 10px 10px;
+	width:550px;
+	min-height:800px;
+	height:auto;
+	position:relative;
+}
+
+/*音乐*/
+.show_music_div{
+	width:780px;
+	min-height:800px;
+	height:auto;
+}
+
+.show_music_info{
+	width:250px;
+	height:210px;
+	max-width:250px;
+	max-height:210px;
+	margin:5px 5px 5px 5px;
+	text-align:center;
+	line-height:20px;
+	float:left;
+}
+
+.show_music_title{
+	width:250px; height:20px; display:inline
+}
+
+
+/*音乐播放*/
+#music_view_div{
+	width:800px;
+	height:auto;
+	min-height:800px;
+}
+
+.music_view_title{
+	width:798px; height:30px; text-align:center
+}
+
+.music_view_operate{
+	width:800px; height:50px;
+}
+
+.music_view_content{
+	width:798px; height:70px; text-align:center;
+}
