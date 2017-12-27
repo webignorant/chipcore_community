@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>空间</title>
+
+    <link href="../css_js/webpage.css" rel="stylesheet" type="text/css" />
+    <link href="../css_js/user_home.css" rel="stylesheet" type="text/css" />
+    <link href="../css_js/user_friend.css" rel="stylesheet" type="text/css" />
+    <link href="../css_js/user_dynamic.css" rel="stylesheet" type="text/css" />
+    <link href="../css_js/tab_social.css" rel="stylesheet" type="text/css" />
+    <script src="../css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+    <script src="../plugins/kindeditor/kindeditor.js"></script>
+    <script src="../plugins/kindeditor/lang/zh_CN.js"></script>
+
+    <link href="css_js/webpage.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/application.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/user_home.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/user_friend.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/user_dynamic.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/tab_social.css" rel="stylesheet" type="text/css" /> {*theme_style*}
+    <script src="css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+    <script src="css_js/jquery.min.js"></script>
+
+    <!--插件-->
+    <script src="plugins/kindeditor/kindeditor.js"></script>
+    <script src="plugins/kindeditor/lang/zh_CN.js"></script>
+    <link href="plugins/jquery.tabs/css/test_base.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/jquery.tabs/css/tabs.css" rel="stylesheet" type="text/css" />
+    <script src="plugins/jquery.tabs/js/jquery.tabs.js"></script>
+    <!--插件-->
+
+    <script language="javascript">
+        var editor;
+
+        KindEditor.ready(function (K) {
+            editor = K.create('textarea[name="kecontent"]', {
+                resizeType: 1,
+                allowPreviewEmoticons: false,
+                allowImageUpload: false,
+                items: [
+                    'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                    'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+            });
+        });
+
+        html = editor.html();
+
+        // 同步数据后可以直接取得textarea的value
+        editor.sync();
+        html = document.getElementById('kecontent').value; // 原生API
+        html = K('#editor_id').val(); // KindEditor Node API
+        html = $('#editor_id').val(); // jQuery
+
+        // 设置HTML内容
+        editor.html('HTML内容');
+    </script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        {*header_div*}
+    </div>
+
+    <div id="webpage">
+        <div id="content">
+            <div id="application_div">
+                <!--
+        	<div class="application_user_div">
+            	<div class="application_user_avatar">
+                	<a href="account.php"><img class="user_avatar_img" src="'.$userAvatar.'"/></a>
+                </div>
+                <div class="application_user_about">
+                	<dl>
+                    	<dd>'.$username.'</dd>
+                        <dd><a href="logout.php">注销</a></dd>
+                    </dl>
+                </div>
+            </div>
+        	<div class="application_content_div">
+            	<span class="application_into">
+                	<img width="32" height="32" src="" style="float:left;" />
+                    {*name*}
+                </span>
+                <span class="application_extend">
+                	<a href=""></a>
+                </span>
+            </div>
+            <div class="friend_link_div">
+            	<div class="friend_link_into">
+                	<img width="32" height="32" src="" style="float:left;" />
+                    {*name*}
+                </div>
+            </div>
+        -->
+                {*application_div*}
+            </div>
+
+            <div id="start_main_div">
+                <div id="left_main_div">
+                    <div id="view_write_div">
+
+                        <div id="tabs4">
+                            <div class="tabs-title">
+                                <div class="tabs-lbg"></div>
+                                <ul class="tabs-list">
+                                    <li class="tabs-option">
+                                        <span class="tabs-option-lbg"></span>
+                                        <span class="tabs-option-text">记心情</span>
+                                        <span class="tabs-option-rbg"></span>
+                                    </li>
+                                    <li class="tabs-option">
+                                        <span class="tabs-option-lbg"></span>
+                                        <span class="tabs-option-text">写日记</span>
+                                        <span class="tabs-option-rbg"></span>
+                                    </li>
+                                </ul>
+                                <div class="tabs-rbg"></div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="tabs-box">
+                                <div class="fatbox">
+                                    <div class="tabs-content">
+                                        <form action="writeRecord_check.php" method="post" name="postform" id="postform">
+                                            <div style=" margin:0px;">
+                                                <select name="mood" style=" margin:5px 5px 5px 5px;">
+                                                    <option value="1" selected="selected">开心</option>
+                                                    <option value="2">伤心</option>
+                                                    <option value="3">郁闷</option>
+                                                    <option value="4">愤怒</option>
+                                                </select>
+                                                <textarea name="content" rows="" wrap="virtual" class="recordcontent"></textarea>
+                                                <br>
+                                                <div style=" margin:2px;float:right;">
+                                                    <input type="submit" class="publish_submitInput" name="Submit" value="发表">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tabs-content">
+                                        <form action="writeDiary_check.php" method="post" name="postform" id="postform" onSubmit="">
+                                            <div style=" margin:0px;">
+                                                标题:
+                                                <input name="title" type="text" maxlength="20" style="width:200px;height:20px;"
+                                                />
+                                                <br>
+                                                <textarea name="content" rows="" wrap="virtual" class="diarycontent"></textarea>
+                                                <div style=" margin:2px;float:left;">
+                                                    <select name="callpurview" style=" margin:5px 5px 5px 5px;">
+                                                        <option value="0" selected="selected">私密日记</option>
+                                                        <option value="1">所有人可见</option>
+                                                        <option value="2">仅好友可见</option>
+                                                    </select>
+                                                    <a href="writeDiary_advanced.php">高级编写模式</a>
+                                                </div>
+                                                <div style=" margin:2px;float:right;">
+                                                    <input type="submit" class="publish_submitInput" name="Submit" value="发表">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            $("#tabs4").tabs({ _event: 1 });
+                        </script>
+
+                        <!--
+                       <div class="homewritetab">
+                            <div id="tab_bg">
+                                 <div id="writeoption1" class="publictabtrue" onclick="setHomeWriteTab(1);">记心情</div>
+                                 <div id="writeoption2" class="publictabfalse" onclick="setHomeWriteTab(2);">写日记</div>
+                            </div>
+                            <div id="homewritetab1">
+                                <form action="writeRecord_check.php" method="post" name="postform" id="postform">
+                                    <div style=" margin:0px;">
+                                          <select name="mood" style=" margin:5px 5px 5px 5px;">
+                                            <option value="1" selected="selected">开心</option>
+                                            <option value="2">伤心</option>
+                                            <option value="3">郁闷</option>
+                                            <option value="4">愤怒</option>
+                                          </select>
+                                          <textarea name="content" rows="" wrap="virtual" class="recordcontent"></textarea>
+                                          <br>
+                                          <div style=" margin:2px;float:right;">
+                                            <input type="submit" name="Submit" value="发表">
+                                          </div>
+                                    </div>
+                                </form>
+                             </div>
+                             <div id="homewritetab2" style="display:none">
+                                <form action="writeDiary_check.php" method="post" name="postform" id="postform" onSubmit="">
+                                    <div style=" margin:0px;">
+                                          标题:<input name="title" type="text" maxlength="20" style="width:200px;height:20px;"/>
+                                          <br>
+                                          <textarea name="content" rows="" wrap="virtual" class="diarycontent"></textarea>
+                                          <div style=" margin:2px;float:left;">
+                                              <select name="callpurview" style=" margin:5px 5px 5px 5px;">
+                                                <option value="0" selected="selected">私密日记</option>
+                                                <option value="1">所有人可见</option>
+                                                <option value="2">仅好友可见</option>
+                                              </select>
+                                              <a href="writeDiary_advanced.php">高级编写模式</a>
+                                          </div>
+                                          <div style=" margin:2px;float:right;">
+                                            <input type="submit" name="Submit" value="发表">
+                                          </div>
+                                    </div>
+                                </form>
+                             </div>
+                      </div>
+                      -->
+                    </div>
+
+                    <div id="view_look_div">
+                        <div class="homeviewarticletab">
+                            <div id="tab_bg">
+                                <div id="viewoption1" class="publictabtrue" onclick="javascript:setHomeViewArticleTab(1);">好友动态</div>
+                                <div id="viewoption2" class="publictabfalse" onclick="javascript:setHomeViewArticleTab(2);">全部动态</div>
+                            </div>
+                            <div id="homeviewarticletab1">
+                                {*friend_dynamic_list*}
+                                <!--
+                                <div class="dynamic_div" style="width:530px; height:auto; min-height:60px; margin:5px;background:#999">
+                                    <div class="dynamic_head_div" style="width:55px; height:60px; float:left;">
+                                        <img width="60" height="60" src="{*head_path*}" />
+                                    </div>
+                                    <div class="dynamic_content_div" style="width:460px; height:auto; min-height:60px; float:right; background:#F00">
+                                        {*username*}分享了{*object*},快去看看吧！
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                            <div id="homeviewarticletab2" style="display:none">
+                                {*all_dynamic_list*}
+                                <!--
+                                <div class="dynamic_div" style="width:530px; height:auto; min-height:60px; margin:5px;background:#999">
+                                    <div class="dynamic_head_div" style="width:55px; height:60px; float:left;">
+                                        <img width="60" height="60" src="{*head_path*}" />
+                                    </div>
+                                    <div class="dynamic_content_div" style="width:460px; height:auto; min-height:60px; float:right; background:#F00">
+                                        {*username*}分享了{*object*},快去看看吧！
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="right_main_div">
+                    <div id="myfriend_div">
+                        <div class="right_div_title">
+                            <a href="friend.php?mode=show">
+                                <h3>我的好友</h3>
+                            </a>
+                        </div>
+                        <hr> {*friend_list*}
+                        <!--
+                    <div class="friend_avatar_div">
+                        <img src="{*friend_avatar*}" width="50px" height="50px"/>
+                        <a href="friend.php?mode=add&friendid={*friendID*}"><h6>{*friend_name*}</h6></a>
+                    </div>
+                    -->
+                    </div>
+
+                    <div id="getfriend_div">
+                        <div class="right_div_title">
+                            <a href="friend.php?mode=add">
+                                <h3>更多好友</h3>
+                            </a>
+                        </div>
+                        <hr> {*more_friend*}
+                        <!--
+                        <div class="friend_avatar_div">
+                            <img src="{*friend_avatar*}" width="50px" height="50px"/>
+                            <h5>{*friend_name*}</h5>
+                        </div>
+                        -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {*jqscript*} {*script*}
+</body>
+
+</html>

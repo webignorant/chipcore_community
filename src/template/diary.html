@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>日记</title>
+    <link href="../css_js/webpage.css" rel="stylesheet" type="text/css" />
+    <link href="../css_js/share_diary.css" rel="stylesheet" type="text/css" />
+    <link href="../css_js/tab_social.css" rel="stylesheet" type="text/css" />
+    <script src="../css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+    <script src="../css_js/jquery.min.js"></script>
+
+    <link href="css_js/webpage.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/application.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/share_diary.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/tab_social.css" rel="stylesheet" type="text/css" /> {*theme_style*}
+    <script src="css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+    <script src="css_js/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        {*header_div*}
+    </div>
+
+    <div id="webpage">
+        <div id="content">
+            <div id="application_div">
+                {*application_div*}
+            </div>
+
+            <div id="start_main_div">
+                <div id="webname" style=" font-size:x-large">
+                    <img width="32" height="32" src="public/image/icon/diary.png" />日记</div>
+                <hr />
+                <br />
+                <div id="diary_div">
+                    <div class="diarytab">
+                        <div id="tab_bg">
+                            <div id="option1" class="publictabtrue" onclick="setDiaryTab(1);">我的日记</div>
+                            <div id="option2" class="publictabfalse" onclick="setDiaryTab(2);">好友日记</div>
+                            <div id="option3" class="righttab">
+                                <a href="writeDiary_advanced.php">写新日记</a>
+                            </div>
+                        </div>
+                        <div id="diarytab1">
+                            {*my_diary_list*}
+                            <!--
+                        <div class="show_diary_div">
+                        	<div class="show_diary_title">
+                            	<div style="float:left">
+                                	<a href="">{*title_name*}</a>
+                                </div>
+                                <div class="show_diary_operating_div">
+                                <dl>
+                                    <dd><a href="">编辑</a></dd>
+                                    <dd><a href="">删除</a></dd>
+                                </dl>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div class="show_diary_info">
+								<dl>
+                                    <dl>{*add_time*} 分类：{*diary_type*} 日记权限：{*call_purview*}</dl>
+                                    <dl>{*content*}</dl>
+                                </dl>
+                            </div>
+                            <div class="show_diary_interactive_div">
+                                <dl>
+                                    <dd><a href="">转发</a></dd>
+                                    <dd><a href="">评论</a></dd>
+                                    <dd><a href="">赞</a></dd>
+                                </dl>
+                            </div>
+                         </div>
+                         -->
+                        </div>
+                        <div id="diarytab2" style="display:none">
+                            <div id="show_diary_div">
+                                {*friend_diary_list*}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="diary_type_div">
+                    <br />
+                    <dl>
+                        <dt>
+                            <h3>我的日记分类：</h3>
+                        </dt>
+                        <dd>默认分类</dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {*jqscript*} {*script*}
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>好友</title>
+    <link href="../css_js/webpage.css" rel="stylesheet" type="text/css" />
+    <link href="../css_js/tab_social.css" rel="stylesheet" type="text/css" />
+    <script src="../css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+    <script src="../plugins/kindeditor/kindeditor.js"></script>
+    <script src="../plugins/kindeditor/lang/zh_CN.js"></script>
+
+    <link href="css_js/webpage.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/application.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/user_message.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/tab_social.css" rel="stylesheet" type="text/css" /> {*theme_style*}
+    <script src="css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+    <script src="plugins/kindeditor/kindeditor.js"></script>
+    <script src="plugins/kindeditor/lang/zh_CN.js"></script>
+    <script language="javascript">
+        var editor;
+
+        KindEditor.ready(function (K) {
+            Editor = K.create('textarea[name="content"]', {
+                resizeType: 1,
+                allowPreviewEmoticons: false,
+                allowImageUpload: false,
+                items: [
+                    'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                    'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+            });
+        });
+
+        html = editor.html();
+
+        // 同步数据后可以直接取得textarea的value
+        editor.sync();
+        html = document.getElementById('content').value; // 原生API
+        html = K('#editor_id').val(); // KindEditor Node API
+        html = $('#editor_id').val(); // jQuery
+
+        // 设置HTML内容
+        editor.html('HTML内容');
+    </script>
+</head>
+
+<body>
+
+    <div id="header">
+        {*header_div*}
+    </div>
+
+    <div id="webpage">
+        <div id="content">
+            <div id="application_div">
+                {*application_div*}
+            </div>
+
+            <div id="start_main_div">
+                <div id="webname" style=" font-size:x-large">
+                    <img width="32" height="32" src="public/image/icon/write_message.png" />写短消息</div>
+                <hr />
+                <div id="tab_bg" style="width:795px; height:30px;">
+                    <div id="option1" class="publictabtrue" onclick="javascript:window.location.href='message.php?mode=outbox'">收件箱</div>
+                    <div id="option2" class="publictabfalse" onclick="javascript:window.location.href='message.php?mode=inbox'">发件箱</div>
+                </div>
+                <p></p>
+                <div id="write_message_div">
+                    <b>发送短消息(秘密对话)</b>
+                    <br />
+                    <form name="" action="writeMessage_check.php?send_userID={*send_userID*}" method="post">
+                        发&nbsp;&nbsp;&nbsp;&nbsp;送给:
+                        <input name="sendUserName" type="text" style="width:300px;" value="{*send_username*}"
+                            onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue" onfocus="if(this.value!=''){this.value='';}"
+                        />
+                        <p /> 电子邮件:
+                        <input name="sendEmail" type="text" style="width:300px;" value="{*send_email*}" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue"
+                            onfocus="if(this.value!=''){this.value='';}" />
+                        <p /> 内容&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                        <br />
+                        <textarea name="sendMessage" wrap="virtual" style="width:350px; height:300px;"></textarea>
+                        <br />
+                        <br />
+                        <input name="" type="submit" value="发送" class="reg_button" />
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {*jqscript*} {*script*}
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*登录界面*/
+
+#login_div{
+	float:left;
+	width:196px;
+	height:800px;
+	text-align:left;
+	background:#f0f5fa;
+}
+#login_div p{
+	margin:5px;
+}
+#login_div #email,#password{
+	width:190px;
+	height:30px;
+}
+#login_div #checkcookie{
+	width:20px;
+	height:20px;
+	cursor:pointer;
+}
+
+.login_buttonInput{
+	width:190px;
+	height:36px;
+	font-size:18px;
+	color:#FFF;
+	line-height:36px;
+	text-align:center;
+	background-image:url(../public/image/common/login_reg_btn.png);
+	background-position:0px -70px;
+	background-color:Transparent;
+	cursor:pointer;
+}
+.login_buttonInput:hover{
+	width:190px;
+	height:36px;
+	font-size:18px;
+	color:#FFF;
+	line-height:36px;
+	text-align:center;
+	background-image:url(../public/image/common/login_reg_btn.png);
+	background-position:0px -110px;
+}
+.reg_buttonInput{
+	width:190px;
+	height:36px;
+	font-size:18px;
+	color:#FFF;
+	line-height:36px;
+	text-align:center;
+	background-image:url(../public/image/common/login_reg_btn.png);
+	background-position:-200px -70px;
+	background-color:Transparent;
+	cursor:pointer;
+}
+.reg_buttonInput:hover{
+	width:190px;
+	height:36px;
+	font-size:18px;
+	color:#FFF;
+	line-height:36px;
+	text-align:center;
+	background-image:url(../public/image/common/login_reg_btn.png);
+	background-position:-200px -110px;
+}

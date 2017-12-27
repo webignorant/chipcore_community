@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+#message_div{
+	width:760px;
+	min-height:400px;
+	height:auto;
+	margin-left:10px;
+	margin-top:10px;
+	position:relative;
+}
+#inbox_list{
+	width:760px; height:50px; border-bottom:1px solid #CCC;
+}
+
+#outbox_list{
+	width:760px; height:50px; border-bottom:1px solid #CCC;
+}
+
+.message_user{
+	width:100px; height:50px; float:left; display:inline;
+}
+
+.message_content{
+	width:580px; height:50px; float:left; display:inline;
+}
+
+.message_operate{
+	width:80px; height:50px; float:right;text-align:right;display:inline;
+}
+
+#write_message_div{
+	width:760px; height:680px;margin:10px auto 5px 10px;
+}

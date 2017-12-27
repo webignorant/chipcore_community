@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>图片上传</title>
+    <link href="../css_js/webpage.css" rel="stylesheet" type="text/css" />
+    <link href="../css_js/tab_social.css" rel="stylesheet" type="text/css" />
+    <script src="../css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+
+    <link href="css_js/webpage.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/application.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/share_image.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/tab_social.css" rel="stylesheet" type="text/css" /> {*theme_style*}
+    <script src="css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+    <script src="css_js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        {*header_div*}
+    </div>
+
+    <div id="webpage">
+        <div id="content">
+            <div id="application_div">
+                {*application_div*}
+            </div>
+
+            <div id="start_main_div">
+                <div id="webname" style=" font-size:x-large">
+                    <img width="32" height="32" src="public/image/icon/image.png" />上传照片</div>
+                <hr />
+                <br />
+                <div id="image_upload_div">
+                    <div class="imageuploadtab">
+                        <div id="tab_bg">
+                            <div id="option1" class="publictabtrue" onclick="setImageUploadTab(1);">普通上传</div>
+                            <div id="option2" class="publictabfalse" onclick="setImageUploadTab(2);">批量上传</div>
+                        </div>
+                        <div id="imageuploadtab1">
+                            <!--{*standard_image_upload*}-->
+                            <div id="standard_image_upload_div">
+                                <form action="image_upload.php" method="post" enctype="multipart/form-data">
+                                    <p>选择需要上传的图片:
+                                        <br />
+                                        <input type="file" name="file" value="avatar" />
+                                        <br />
+                                        <input type="submit" name="upload" value="上传" class="reg_button" />
+                                    </p>
+                                </form>
+                            </div>
+                            {*show_info*}
+                        </div>
+                        <div id="imageuploadtab2" style="display:none">
+                            <div id="batch_image_upload">
+                                {*batch_image_upload*} 未提供该功能
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {*jqscript*} {*script*}
+</body>
+
+</html>

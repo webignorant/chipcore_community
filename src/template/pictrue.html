@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>照片</title>
+
+    <link href="../css_js/webpage.css" rel="stylesheet" type="text/css" />
+    <link href="../css_js/tab_social.css" rel="stylesheet" type="text/css" />
+    <script src="../css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+
+    <link href="css_js/webpage.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/application.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/share_image.css" rel="stylesheet" type="text/css" />
+    <link href="css_js/tab_social.css" rel="stylesheet" type="text/css" /> {*theme_style*}
+    <script src="css_js/tab_social.js" type="text/javascript" language="javascript"></script>
+    <script src="css_js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        {*header_div*}
+    </div>
+
+    <div id="webpage">
+        <div id="content">
+            <div id="application_div">
+                {*application_div*}
+            </div>
+
+            <div id="start_main_div">
+                <div id="webname" style=" font-size:x-large">
+                    <img width="32" height="32" src="public/image/icon/image.png" />照片</div>
+                <hr />
+                <div id="pictrue_div">
+                    <div class="pictruetab">
+                        <div id="tab_bg">
+                            <div id="option1" class="publictabtrue" onclick="setPictrueTab(1);">我的照片</div>
+                            <div id="option2" class="publictabfalse" onclick="setPictrueTab(2);">好友照片</div>
+                            <div id="option3" class="righttab">
+                                <input type="button" value="上传图片" onclick="javascript:window.location.href='image_upload.php'" />
+                            </div>
+                        </div>
+                        <div id="pictruetab1">
+                            <div id="show_image_div">
+                                {*my_image_list*}
+                                <!--
+                        	<div class="show_image_info">
+                            	<div style=" width:250px; height:180px; "><a href=""><img width="250" height="188" src="" /></a></div>
+                                <div style=" width:250px; height:20px; position:absolute; left:0px; top:190px;"><a href="">{*image_name*}</a></div>
+                            </div>
+                    -->
+                            </div>
+                        </div>
+                        <div id="pictruetab2" style="display:none">
+                            <div id="show_pictrue_div">
+                                好友照片
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    {*jqscript*} {*script*}
+</body>
+
+</html>
